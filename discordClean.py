@@ -5,6 +5,11 @@ from discord import Embed
 import discord
 from discord.ext import commands
 from discord import app_commands
+from dotenv import load_dotenv  # Importa la librería dotenv
+
+
+# Cargar variables del archivo .env
+load_dotenv()
 
 # Token del bot de Discord (asegúrate de mantenerlo seguro y no compartirlo públicamente)
 bot_token = os.getenv('TOKEN')
