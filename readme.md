@@ -5,6 +5,9 @@ Al ser un codigo nuevo, se espera implementar mejoras dependiendo de las necesid
 Se deja el código abierto para su uso.
 
 ## Requisitos para funcionamiento
+# Instalacion en Discord
+[Instalación de App en discord](https://discord.com/oauth2/authorize?client_id=1298142956863226029&permissions=3072&integration_type=0&scope=bot)
+
 # Python
 El código y su lógica está hecha con Python, a continuación se detallan las librerias utilizadas.
 1.	sudo apt install python3-pip
@@ -16,6 +19,13 @@ El código y su lógica está hecha con Python, a continuación se detallan las 
 ## ⚡️ Environment Variables
 Nombres de variables de entorno, para su uso.
 `TOKEN`
+
+
+## ⚡️ Comandos actuales
+> /validate_members discord_server_id(Id del servidor de discord) tag(Tag de members del gremio ej: [CDS]) gremio_id(El id del gremio en albion)
+
+El gremio id lo puedes obtener por la API de albion (ejemplo: https://gameinfo.albiononline.com/api/gameinfo/search?q=Hakendo), identificando el campo "GuildId"
+
 
 
 # Contribute
