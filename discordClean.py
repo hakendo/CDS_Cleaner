@@ -5,14 +5,18 @@ from discord import Embed
 import discord
 from discord.ext import commands
 from discord import app_commands
-from dotenv import load_dotenv  # Importa la librería dotenv
-
+from dotenv import load_dotenv #Libreria para lectura de env var
 
 # Cargar variables del archivo .env
 load_dotenv()
 
+
 # Token del bot de Discord (asegúrate de mantenerlo seguro y no compartirlo públicamente)
 bot_token = os.getenv('TOKEN')
+
+if not bot_token:
+    raise ValueError("El token de la App de discord, no fue cargado correctamente desde el archivo .env")
+
 
 # URL de la API de Albion Online para obtener los miembros de la guild (aquí puedes hacer que también sea parametrizable si lo necesitas)
 albion_url = "https://gameinfo.albiononline.com/api/gameinfo/guilds/[id_gremio]/members"
